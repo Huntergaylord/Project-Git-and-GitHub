@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GP Functions</title>
+</head>
+
+<body>
+
+    <h1>Functions Guided Project</h1>
+    <script>
+        console.log('Hello World')
+
+        let car = "Corolla"
+        function printCar() {
+            console.log(car)
+        }
+        printCar()
+
+        function fail() {
+            let plane = "Spitfire"
+        }
+        // console.log(fail)
+
+        let boat = 'Queen Mary'
+        function printBoat() {
+            let boat = 'Titanic'
+            console.log(boat)
+        }
+        printBoat()
+        function validatePostalCode(code) {
+            if (code > 0 && code < 10000){
+                return "The code is OK"
+        }
+        return "There is a problem with the code"
+        }
+
+        console.log(validatePostalCode(8444))
+        let returnedVal = validatePostalCode(-6)
+        console.log(returnedVal)
+
+        function sum(a, b) {
+      console.log('arg a -->', a)
+      console.log('arg b -->', b)
+      const result = a + b
+      console.log('result -->', result)
+      return result
+        }
+     console.log(sum(34, 56)) 
+
+     function report(points, level) {
+      let status
+      if (points > 90) {
+        status = "doing great"
+      } else if (points > 50) {
+        status = "still kickin'"
+      } else {
+        status = "in bad shape"
+      }
+      let str = `I'm on level ${level} and I am ${status}!`
+      return str
+    }
+    report(5, 7) // return "I'm in bad shape but I am in level 7"
+    console.log(report(95, 8))
+    console.log(report(60, 4))
+    console.log(report(25, 7))
+
+    let points = 12;
+let name = "Gabe";
+
+let message = `Nice job, ${name}. You scored ${points} points!`;
+
+console.log(message)
+    </script>
+</body>
+
+</html>
